@@ -20,7 +20,7 @@ To use this sample application, follow these steps:
     - Under `src/Backend/Contoso.Pizza.AdminAPI.MVC`, update the database connection string in the `appsettings.json` file to point to your desired database.
     ```
     "ConnectionStrings": {
-        "ContosoPizza": "<add your connection string>"
+        "ContosoPizza": "Server=.;Database=ContosoPizza;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true;"
     }
     ```
     - Build the solution to restore NuGet packages and compile the code.

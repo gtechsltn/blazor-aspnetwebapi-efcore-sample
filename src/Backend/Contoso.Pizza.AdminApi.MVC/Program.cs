@@ -1,4 +1,3 @@
-
 using Contoso.Pizza.AdminApi.Services.Extensions;
 
 namespace Contoso.Pizza.AdminApi.MVC;
@@ -21,6 +20,10 @@ public class Program
         ConfigureMvcServices(app);
 
         app.CreateDbIfNotExists();
+
+        var conString = ConfigurationExtensions.GetConnectionString(builder.Configuration, "ContosoPizza");
+
+        Console.WriteLine(conString);
 
         app.Run();
     }
