@@ -16,14 +16,13 @@ public class Program
 
         var app = builder.Build();
 
-        // Configure the HTTP request pipeline.
+        //Configure the HTTP request pipeline.
         ConfigureMvcServices(app);
 
         app.CreateDbIfNotExists();
 
-        var conString = ConfigurationExtensions.GetConnectionString(builder.Configuration, "ContosoPizza");
-
-        Console.WriteLine(conString);
+        //var conString = ConfigurationExtensions.GetConnectionString(builder.Configuration, "ContosoPizza");
+        //Console.WriteLine(conString);
 
         app.Run();
     }

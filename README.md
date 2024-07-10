@@ -55,3 +55,11 @@ Sauce Delete
 ![Sauce Delete](./assets/sauce-delete.png)
 
 Other entity UI are similar to the Sauce UI. 
+
+# Endpoints Explorer: Explore the .http files
+
+## Use Endpoints Explorer
+Endpoints Explorer is a tool window in Visual Studio 2022 that provides a UI that integrates with the .http file editor for testing HTTP requests.
+
+## Open Endpoints Explorer
+View > Other Windows > Endpoints Explorer.
